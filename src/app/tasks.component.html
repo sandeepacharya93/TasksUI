@@ -1,0 +1,30 @@
+<h2>To-Do List</h2>
+<html>
+    <div>
+        <div>
+           <table>
+            <thead>
+                <th>Name</th>
+                <th>Decription</th>
+                <th>Created on</th>
+                <th>Modified on</th>
+                <th>Checked</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let task of taskList">
+                    <td>{{task.Name}}</td>
+                    <td>{{task.Description}}</td>
+                    <td>{{task.CreatedOn}}</td>
+                    <td>{{task.ModifiedOn}}</td>
+                    <td>{{task.IsChecked}}</td>
+                </tr>
+            </tbody>
+           </table>
+        </div>
+                                </div>
+</html>
+<a href="addTask">Add Task</a>
+
+<div class='container'>
+    <router-outlet></router-outlet>
+</div>

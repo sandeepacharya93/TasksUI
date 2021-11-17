@@ -1,0 +1,25 @@
+
+<div>
+    <h4>Enter details of new task</h4>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Decription</th>
+            <th>IsChecked</th>
+        </thead>
+        <tbody>
+            <tr >
+                <td><input [(ngModel)]='task.Name'></td>
+                <td><input [(ngModel)]= 'task.Description'></td>
+                <td><input [(ngModel)]= 'task.IsChecked'></td>
+            </tr>
+        </tbody>
+       </table>
+</div>
+
+<button (click)="save()">Save</button>
+<button (click)="cancel()">Cancel</button>
+<button (click)="back()">Back</button>
+
+
+<router-outlet></router-outlet>

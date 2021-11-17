@@ -1,0 +1,16 @@
+<div class='container'>
+    <div>
+        <label>User Name: </label>
+        <input [(ngModel)]='userName' type="text">
+      </div>
+      <div>
+        <label>Password:</label>
+        <input  [(ngModel)]='password' type="password">
+      </div>
+      <button (click)="login()">Login</button>
+</div>
+
+
+<div class='container'>
+    <router-outlet></router-outlet>
+</div>
